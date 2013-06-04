@@ -16,7 +16,7 @@ AUTH_URL = "http://api.riodatamine.com.br/rest/request-token?" \
             "app-id=%s&app-secret=%s"
 
 RAIN_URL = "http://api.riodatamine.com.br/" \
-        "rest/meteorologia/pluviometros?format=json"
+            "rest/meteorologia/pluviometros?format=json"
 
 FLOOD_URL = "http://api.riodatamine.com.br/" \
             "rest/agua/pontos-alagamento?format=json"
@@ -27,8 +27,6 @@ SCHOOLS_URL = "http://api.riodatamine.com.br/" \
 my_config = {'verbose': sys.stderr}
 
 def auth(app_id, app_secret):
-    #import pdb; pdb.set_trace()
-
     OAuthHook.consumer_key = app_id
     OAuthHook.consumer_secret = app_secret
     oauth_hook = OAuthHook('', '')

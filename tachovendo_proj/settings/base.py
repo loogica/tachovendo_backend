@@ -2,6 +2,7 @@
 """Common settings and globals."""
 
 
+import os
 from os.path import abspath, basename, dirname, join, normpath
 from sys import argv, path
 
@@ -213,6 +214,10 @@ LOCAL_APPS = (
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 ########## END APP CONFIGURATION
 
+########## RIOAPPS KEY CONFIG
+APP_ID = os.environ.get('RIOAPPS_APP_ID')
+APP_SECRET = os.environ.get('RIOAPPS_APP_SECRET')
+########## END RIOAPPS KEYS CONFIG
 
 ########## LOGGING CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#logging
