@@ -8,7 +8,7 @@ pip install -r requirements/local.txt
 
 ## Database
 
-Configure `tachovendo_proj/settings/base.py`
+Configure `DATABASE` on `tachovendo_proj/settings/base.py`
 
 ```sh
 make server_dbinitial
@@ -20,4 +20,4 @@ make runserver
 
 ```sh
 make test
-``
+```
